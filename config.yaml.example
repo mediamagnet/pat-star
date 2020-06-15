@@ -1,0 +1,8 @@
+Bot:
+
+  Token: "Your discord bot token here" 
+  Prefix: "bot's prefix"
+  ID: "ID of the bot"
+
+Owner:
+  ID: "your ID"
