@@ -2,7 +2,6 @@ package commands
 
 import (
 	"fmt"
-	"os"
 	"pat-star/lib"
 	"strings"
 
@@ -13,7 +12,7 @@ import (
 // Help command.
 type Help struct{ Command }
 
-var prefix = os.Getenv("PREFIX")
+var prefix = "." // TODO: Import from yaml
 
 // InitHelp initializes the help command.
 func InitHelp() Help {
