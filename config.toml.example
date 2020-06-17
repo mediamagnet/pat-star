@@ -1,0 +1,11 @@
+title = "Pat-Star Config file"
+
+[Bot]
+
+# bot configurations
+    Token = "Bot token" 
+    Prefix = "Bot Prefix"
+    ID = "Bot User ID"
+
+[Owner]
+    ID = "Your User ID"

@@ -49,11 +49,11 @@ func EncodeSession(inFile string, outFile string) {
 	encodeSession, err := dca.EncodeFile(inFile, options)
 	defer encodeSession.Cleanup()
 
-	output, err := os.Create(outFile) // Include full path including *.dca TODO: assume path based on inFile
+	output, err := os.Create(outFile) // Include full path including *.dca
 	if err != nil {
 		logrus.Fatal(err)
 	}
-	io.Copy(output, encodeSession)
+	io.Copy(output, encodeSession) // TODO: assume path based on inFile
 
 }
 

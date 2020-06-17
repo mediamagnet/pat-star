@@ -23,6 +23,7 @@ var log = &logrus.Logger{
 func main() {
 
 	viper.SetConfigName("config")
+	viper.SetConfigType("toml")
 	viper.AddConfigPath(".")
 
 	var cfg config.Configuration
